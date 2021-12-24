@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comic Sans MS;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: Red;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #3cb371;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ffa500;
+  color:black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #81ff47;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url('sport competition.jpg');
+  width: 100%;
+  background-repeat:no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: blue;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:white;">NINESTREET CUP</h1>
+  <p style ="color:white;">HUT KEMERDEKAAN RI 76.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about us.html">About Us</a>
+  <a href="#">Gallery</a>
+  <a href="contact us.html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2 style="color:white;">KEEP FIGHTHING SPORTIVITY</h2>
+      <h4 style="color:white;">SPORT COMPETITION:</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="gallery 1.jpg" alt="tennis" width="600" height="400">
+    <div class="desc">TABLE TENNIS</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="gallery 2.jpg" alt="FUTSAL" width="600" height="400">
+    <div class="desc">FUTSAL</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="gallery 3.jpg" alt="BADMINTON" width="600" height="400">
+    <div class="desc">BADMINTON</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="gallery 4.jpg" alt="CHESS" width="600" height="400">
+    <div class="desc">CHESS</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p style="color:white;">HADIAH UTAMA:RP 50 JUTA</p>
+  <p style="color:white;">DAFTAR SEKARANG JUGA!!! KUOTA TERBATAS</p>
+</div>
+
+    </div>
+</div>
+<div class="footer">
+    <p>Author: 12180259 - Andrew Alviandy<br>
+  <a href="mailto:L0894@example.com">Andrew180500@gmail.com</p>
+  <a href="https://instagram.com"><img src="instagram.jpg" width="50" height="50"></a>
+  <a href="https://facebook.com"><img src="facebook.jpg" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/"><img src="tiktok.png" width="50" height="50"></a>
+
+</div>
+
+</body>
+</html>
